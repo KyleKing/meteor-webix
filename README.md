@@ -9,10 +9,20 @@ Stay tuned by clicking **Watch**/**Star** on GitHub.
 
 ## Demo
 
-[CRUD example](http://webix.meteor.com) • [source](examples/crud) • [Meteor DevShop talk video](http://youtube.com/watch?v=s3ylMIf_0XU)
+* [CRUD example](http://webix.meteor.com) • [source](examples/crud) • [Meteor DevShop talk video](http://youtube.com/watch?v=s3ylMIf_0XU)
+* Examples from the Webix team: [Meteor-centrix example](https://github.com/webix-hub/webix-meteor-example), [Webix-centric example](https://github.com/webix-hub/webix-meteor-example)
 
 
-## Documentation
+## Usage
+
+Get started by adding the `webix:webix` package and a skin. For example, to add the default skin:
+
+    meteor add webix:webix
+    meteor add webix:skin-flat
+    
+If you use Font Awesome icons, or have [sortable tables or other UI components that need Font Awesome icons](https://github.com/webix-hub/tracker/issues/223), install Font Awesome as well:
+
+    meteor add fortawesome:fontawesome
 
 Use Meteor collections as usual and simply specify `webix.proxy('meteor', Collection|Cursor)` for the
 `url` and `save` properties of the component:
@@ -29,12 +39,17 @@ webix.ui({
 });
 ```
 
-More detailed documentation in the [webix-meteor-data README](../../../webix-meteor-data).
+### Learn more
+
+* [Webix Quickstart](http://webix.com/quick-start) - interactive tutorial
+* [Getting started with Webix](http://docs.webix.com/desktop__getting_started.html) - documentation
+* [webix-meteor-data README](webix-meteor-data) - the Meteor - Webix adapter
+* [webix on GitHub](https://github.com/webix-hub/tracker)
 
 
 ## What works
 
-* package tests (font loading, visual check)
+* package tests (font loading via skins, visual check)
 * load and save data to/from reactive DataTable, List, and other widgets backed by
   [linear](http://docs.webix.com/desktop__dynamic_loading.html) data structures
 
@@ -48,8 +63,11 @@ More detailed documentation in the [webix-meteor-data README](../../../webix-met
 
 ## TODO
 
-* Webix wrapper for Meteor/Blaze reactive templates
-* routing
+* map nested objects onto Webix forms ([#10](https://github.com/dandv/meteor-webix/issues/10))
+* client-side error messages on failed server operations via Collection.deny
+* review
+  * Webix wrapper for Meteor/Blaze reactive templates
+  * routing
 * persist order of List/DataTable elements reordered via drag-and-drop (similar to
   [rubaxa:sortable](https://atmospherejs.com/rubaxa/sortable))
 * reactive [Multiview](http://docs.webix.com/desktop__multiview.html), similar to
@@ -63,11 +81,12 @@ More detailed documentation in the [webix-meteor-data README](../../../webix-met
 
 # Licensing
 
-Author: Dan Dascalescu ([@dandv](http://github.com/dandv))
+Meteor package author: Dan Dascalescu ([@dandv](http://github.com/dandv))
 
-Acknowledgments: the Webix team, and especially Maksim Kozhukh ([@mkozhukh](https://github.com/mkozhukh)).  
+Acknowledgments: the Webix team, and especially Maksim Kozhukh ([@mkozhukh](https://github.com/mkozhukh)) - the developers of the [webix-meteor-data adapter](https://github.com/webix-hub/webix-meteor-data).
+
 Webix is (C) 2013-2015 XB Software and is available under commercial and
-[GPLv3 licenses](http://forum.webix.com/discussion/2114/webix-gpl-as-ui-on-commercial-server).
+[GPLv3 licenses](http://forum.webix.com/discussion/2114/webix-gpl-as-ui-on-commercial-server). A [license exemption for non-GPL software](http://forum.webix.com/discussion/4023/does-an-open-source-app-that-uses-webix-have-to-become-gpl-licensed) is being worked on.
 
 This Webix package for Meteor is published under the MIT license.
 
