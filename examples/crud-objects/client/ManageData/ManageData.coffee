@@ -9,10 +9,12 @@ col = [
 
 # Initialization
 # http://docs.webix.com/api__refs__ui.datatable.html
-dataTable = undefined
 dataTable =
   view: 'datatable'
   id: 'datatable'
+  # scheme: $init: (obj) ->
+  #   #obj - data object from incoming data
+  #   obj.brand = obj.moreStuff.phone.brand
   columns: [ {
     id: col[0].name
     header: col[0].description
