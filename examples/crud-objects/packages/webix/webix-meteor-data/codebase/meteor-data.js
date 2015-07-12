@@ -98,6 +98,8 @@ webix.proxy.meteor = {
 
 		delete obj.data.id;
 		if (obj.operation == "update"){
+				console.log(obj.id);
+				console.log(obj.data);
 			//data changed
 			this.collection.update(obj.id, { $set: obj.data } );
 			webix.delay(function(){

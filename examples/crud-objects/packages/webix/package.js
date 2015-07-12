@@ -25,7 +25,13 @@ try {
   version = packageJson.version;
 } catch (e) {
   // if the file was not found, fall back to GitHub
-  console.warn('Could not find webix/bower.json to read version number from; trying GitHub...');
+  //
+  //
+  // console.warn('Could not find webix/bower.json to read version number from; trying GitHub...');
+
+
+
+
   var url = 'https://api.github.com/repos/' + gitHubPath + '/tags';
   request.get({
     url: url,
