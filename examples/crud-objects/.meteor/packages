@@ -1,0 +1,85 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+# autopublish
+# insecure
+
+# Developer Tools
+meteortoys:allthings # Pres ctrl-m to activate
+
+## Visuals
+
+# Preprocessors
+mquandalle:jade
+coffeescript
+stylus
+
+# Icons
+mrt:ionicons
+fortawesome:fontawesome
+
+# Libraries
+# cryptoquick:stylus-multi
+kyleking:customizable-bootstrap-stylus
+
+# Webix
+webix:webix
+webix:skin-flat
+
+# JS Libraries - Visual
+# webix:webix
+# webix:skin-web
+maazalik:highcharts
+maazalik:highcharts-gauge
+# jhuenges:highstock
+mrt:leaflet
+fuatsengul:leaflet-markercluster
+appshore:leaflet-awesome-markers
+timmyg:wow
+chrisbutler:typed.js
+mrt:jquery-easing
+
+## Tools
+
+# JS Libraries - Tools
+momentjs:moment
+mrt:underscore-string-latest
+meteorhacks:kadira
+meteorhacks:aggregate
+jparker:crypto-aes
+
+# Router:
+iron:router
+zimme:iron-router-active
+okgrow:iron-router-autoscroll
+
+# Collections:
+dburles:collection-helpers
+matb33:collection-hooks
+reywood:publish-composite
+
+# Authentication
+accounts-password
+alanning:roles
+useraccounts:bootstrap
+
+# Seed Data
+dburles:factory
+anti:fake
+# clinical:accounts-famous-dead-people
+
+# Mobile Functions
+mdg:camera
+
+# Misc:
+cunneen:mailgun
+cmather:handlebars-server@0.2.0
+matdutour:outdated-browser
+peerlibrary:blaze-components
+
+# https://atmospherejs.com/lookback/seo
+yasinuslu:blaze-meta
