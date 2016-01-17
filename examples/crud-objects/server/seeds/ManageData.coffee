@@ -1,3 +1,6 @@
+if Data.find().count() != 0
+  console.log 'DATA exisits!'
+
 if Data.find().count() == 0
   Data.insert
     'name': 'John'

@@ -16,7 +16,6 @@ dataTable =
   #   #obj - data object from incoming data
   #   obj.brand = obj.moreStuff.phone.brand
   columns: [ {
-    id: col[0].name
     header: col[0].description
     editor: 'text'
     fillspace: true
